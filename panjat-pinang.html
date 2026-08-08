@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bermain Panjat Pinang - KPOTI Lombok Tengah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo-kpoti.png" alt="Logo KPOTI">
+            <span>KPOTI Lombok Tengah</span>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="games.html" class="active">Daftar Permainan</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><button id="theme-toggle-btn" title="Ganti Tema">🎨</button></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
+    </header>
+    <div class="detail-wrapper">
+        <main>
+            <div class="game-header">
+                <p class="breadcrumb-text">Beranda > Hiburan > Panjat Pinang</p>
+                <h1>Panjat Pinang: Gotong Royong Meraih Puncak</h1>
+                <div class="game-meta">
+                    <span>👥 1+ Tim (5-10 org)</span>
+                    <span>⏱️ Fleksibel</span>
+                    <span>🧠 Gotong Royong & Hiburan</span>
+                </div>
+            </div>
+            <img src="assets/panjat-pinang/panjat-pinang.jpg" alt="Bermain Panjat Pinang" class="featured-image">
+            <section class="content-section">
+                <h2>Sekilas Sejarah</h2>
+                <p>Permainan ini identik dengan perayaan 17 Agustus dan menjadi simbol kebersamaan, gotong royong, serta kerja sama untuk mencapai tujuan. Peserta harus bekerja sama membentuk rantai manusia untuk mencapai puncak.</p>
+            </section>
+            <section class="content-section">
+                <h2>Alat & Persiapan</h2>
+                <ul class="custom-list">
+                    <li><strong>Batang Pohon Pinang:</strong> Batang yang tinggi, lurus, dan sudah dikuliti.</li>
+                    <li><strong>Pelumas:</strong> Oli bekas atau minyak untuk melumuri batang pohon.</li>
+                    <li><strong>Hadiah:</strong> Berbagai macam hadiah digantung di puncak tiang.</li>
+                    <li><strong>Lokasi:</strong> Tanah lapang atau area berlumpur yang aman.</li>
+                </ul>
+            </section>
+            <section class="content-section">
+                <h2>Cara Bermain</h2>
+                <ol class="step-list">
+                    <li>Tim yang berlomba akan mencoba memanjat batang pinang yang sangat licin.</li>
+                    <li>Mereka harus menyusun strategi, biasanya dengan membuat "rantai manusia" di mana pemain saling memanjat pundak.</li>
+                    <li>Pemain terkuat menjadi fondasi di paling bawah.</li>
+                    <li>Permainan berakhir jika ada anggota tim yang berhasil mencapai puncak dan mengambil semua hadiah.</li>
+                </ol>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <h3>Permainan Lainnya</h3>
+            <a href="layang-layang.html" class="mini-card">
+                <img src="assets/layang-layang/layang-layang.jpg" alt="Layang-layang">
+                <div><h4>Layang-layang</h4><small>Ketangkasan</small></div>
+            </a>
+            <a href="ular-naga.html" class="mini-card">
+                <img src="assets/ular-naga/ular-naga.jpg" alt="Ular Naga Panjang">
+                <div><h4>Ular Naga Panjang</h4><small>Sosial</small></div>
+            </a>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>KPOTI Lombok Tengah</h3>
+                <p class="slogan">Merawat Tradisi, Merajut Persatuan.</p>
+                <p class="copyright">&copy; 2026 KPOTI Lombok Tengah. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="games.html">Daftar Permainan</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTopBtn" class="back-to-top-btn" title="Kembali ke atas">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+### Perubahan pada `d:\SMTR 3 TI\KPOTI_web\games.html`
+
+Saya menambahkan tombol filter baru dan kartu untuk keempat permainan tersebut.
+
+```diff
+--- a/d:\SMTR 3 TI\KPOTI_web\games.html
++++ b/d:\SMTR 3 TI\KPOTI_web\games.html
+@@ -35,6 +35,8 @@
+             <button class="filter-btn" data-filter="kerjasama">Kerjasama</button>
+             <button class="filter-btn" data-filter="sosial">Sosial</button>
+             <button class="filter-btn" data-filter="bela diri">Bela Diri</button>
++            <button class="filter-btn" data-filter="olahraga tradisional">Olahraga Tradisional</button>
++            <button class="filter-btn" data-filter="hiburan">Hiburan</button>
+         </div>
+         <p style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+             Jelajahi warisan leluhur kita. Pilih permainan di bawah ini untuk melihat sejarah dan tata cara bermainnya.
+@@ -263,6 +265,54 @@
+                 </div>
+             </article>
+ 
++            <article class="game-card">
++                <div class="card-img-holder">
++                    <img src="https://images.unsplash.com/photo-1516962322824-24a6d39534f3" alt="Layang-layang" style="background:#ddd;">
++                </div>
++                <div class="card-content">
++                    <span class="tag">Ketangkasan</span>
++                    <h3>Layang-layang</h3>
++                    <p>Adu ketangkasan memutus benang layangan lawan di udara.</p>
++                    <a href="layang-layang.html" class="btn-read">Cara Bermain →</a>
++                </div>
++            </article>
++
++            <article class="game-card">
++                <div class="card-img-holder">
++                    <img src="https://images.unsplash.com/photo-1629819242995-89a5c9936528" alt="Tarik Tambang" style="background:#ddd;">
++                </div>
++                <div class="card-content">
++                    <span class="tag">Olahraga Tradisional</span>
++                    <h3>Tarik Tambang</h3>
++                    <p>Adu kekuatan dan kekompakan beregu untuk menarik tali.</p>
++                    <a href="tarik-tambang.html" class="btn-read">Cara Bermain →</a>
++                </div>
++            </article>
++
++            <article class="game-card">
++                <div class="card-img-holder">
++                    <img src="https://images.unsplash.com/photo-1550495548-9d12a4c53a22" alt="Ular Naga Panjang" style="background:#ddd;">
++                </div>
++                <div class="card-content">
++                    <span class="tag">Sosial</span>
++                    <h3>Ular Naga Panjang</h3>
++                    <p>Permainan kelompok yang diiringi dengan nyanyian ceria.</p>
++                    <a href="ular-naga.html" class="btn-read">Cara Bermain →</a>
++                </div>
++            </article>
++
++            <article class="game-card">
++                <div class="card-img-holder">
++                    <img src="https://images.unsplash.com/photo-1630912288729-24773a94fa33" alt="Panjat Pinang" style="background:#ddd;">
++                </div>
++                <div class="card-content">
++                    <span class="tag">Hiburan</span>
++                    <h3>Panjat Pinang</h3>
++                    <p>Gotong royong memanjat tiang licin untuk meraih hadiah di puncak.</p>
++                    <a href="panjat-pinang.html" class="btn-read">Cara Bermain →</a>
++                </div>
++            </article>
++
+         </div>
+     </div>
+ 
+```
+
+Sekarang situs Anda memiliki empat permainan populer tambahan. Anda bisa mengganti gambar-gambar tersebut dengan gambar milik Anda sendiri dengan menyimpannya di folder `assets` dan memperbarui tautannya.
+
+<!--
+[PROMPT_SUGGESTION]Saya sudah menambahkan gambar untuk permainan baru, tolong perbarui kodenya.[/PROMPT_SUGGESTION]
+[PROMPT_SUGGESTION]Buatkan halaman "Tentang" yang lebih detail dengan visi, misi, dan struktur organisasi KPOTI.[/PROMPT_SUGGESTION]
+-->

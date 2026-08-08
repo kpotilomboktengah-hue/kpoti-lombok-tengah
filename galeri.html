@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kegiatan - KPOTI Lombok Tengah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo-kpoti.png" alt="Logo KPOTI">
+            <span>KPOTI Lombok Tengah</span>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="games.html">Daftar Permainan</a></li>
+                <li><a href="galeri.html" class="active">Galeri</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><button id="theme-toggle-btn" title="Ganti Tema">🎨</button></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="section-title">Galeri Kegiatan</h1>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+            Momen-momen kegembiraan dan kebersamaan saat kami melestarikan permainan tradisional.
+        </p>
+
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/lomba-17an/kegiatan-lomba-17an.jpg" alt="Dokumentasi Lomba 17an">
+                <div class="gallery-caption"><p>Lomba 17an</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/tarik-tambang/dokumentasi-tarik-tambang.jpg" alt="Dokumentasi Tarik Tambang">
+                <div class="gallery-caption"><p>Dokumentasi Tarik Tambang</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/tim/foto-bersama-tim.jpg" alt="Dokumentasi Foto Bersama Tim">
+                <div class="gallery-caption"><p>Foto Bersama Tim</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/lomba-17an/lomba-egrang.jpg" alt="Lomba Egrang di desa">
+                <div class="gallery-caption"><p>Lomba Egrang</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/tim/rapat-koordinasi.jpg" alt="Tim KPOTI sedang rapat koordinasi">
+                <div class="gallery-caption"><p>Rapat Koordinasi Tim</p></div>
+            </div>
+
+            <!-- Contoh penambahan foto tim baru -->
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/tim/foto-bersama-tim-2.jpg" alt="Foto bersama tim lainnya">
+                <div class="gallery-caption"><p>Foto Tim</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/tim/foto-bersama-tim-3.jpg" alt="Foto bersama tim setelah workshop">
+                <div class="gallery-caption"><p>Foto Tim</p></div>
+            </div>
+
+            <!-- ▼▼▼ TEMPAT MENAMBAHKAN FOTO BARU ▼▼▼ -->
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/festival-bekedek/festival-bekedek.webp" alt="Festival Bekedek">
+                <div class="gallery-caption"><p>Festival Bekedek</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/festival-bekedek/festival-bekedek-1.webp" alt="Suasana Festival Bekedek">
+                <div class="gallery-caption"><p>Suasana Festival Bekedek</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/festival-guru-bekedek.webp" alt="Festival Guru Bekedek">
+                <div class="gallery-caption"><p>Festival Guru Bekedek</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/festival-guru-bekedek-1.webp" alt="Suasana Festival Guru Bekedek">
+                <div class="gallery-caption"><p>Suasana Festival Guru Bekedek</p></div>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/workshop.webp" alt="Workshop Permainan Tradisional">
+                <div class="gallery-caption"><p>Workshop Permainan Tradisional</p></div>
+            </div>
+            <!-- 
+                CARA MENAMBAHKAN FOTO BARU:
+                Salin blok kode di bawah ini, lalu ganti NAMA_FOLDER, NAMA_FILE, dan teks keterangannya.
+            -->
+            <!-- Contoh:
+            <div class="gallery-card">
+                <img src="assets/dokumentasi/NAMA_FOLDER/NAMA_FILE.jpg" alt="Deskripsi foto">
+                <div class="gallery-caption"><p>Teks Keterangan</p></div>
+            </div>
+            -->
+            <!-- ▲▲▲ BATAS AKHIR PENAMBAHAN FOTO ▲▲▲ -->
+
+        </div>
+    </div>
+
+    <!-- The Lightbox -->
+    <div id="myLightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>KPOTI Lombok Tengah</h3>
+                <p class="slogan">Merawat Tradisi, Merajut Persatuan.</p>
+                <p class="copyright">&copy; 2026 KPOTI Lombok Tengah. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="games.html">Daftar Permainan</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" class="back-to-top-btn" title="Kembali ke atas">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

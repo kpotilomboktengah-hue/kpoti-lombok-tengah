@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Permainan - KPOTI Lombok Tengah</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo-kpoti.png" alt="Logo KPOTI">
+            <span>KPOTI Lombok Tengah</span>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="games.html" style="color: var(--secondary);">Daftar Permainan</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><button id="theme-toggle-btn" title="Ganti Tema">🎨</button></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div class="container" style="margin-top: 40px;">
+        <h1 class="section-title">Semua Permainan Nusantara</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Cari permainan...">
+        </div>
+        <!-- ▼▼▼ KARDUS PEMBUNGKUS BARU ▼▼▼ -->
+        <div id="filter-section">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="semua">Semua</button>
+                <button class="filter-btn" data-filter="ketangkasan">Ketangkasan</button>
+                <button class="filter-btn" data-filter="strategi">Strategi</button>
+                <button class="filter-btn" data-filter="keseimbangan">Keseimbangan</button>
+                <button class="filter-btn" data-filter="kerjasama">Kerjasama</button>
+                <button class="filter-btn" data-filter="sosial">Sosial</button>
+                <button class="filter-btn" data-filter="bela diri">Bela Diri</button>
+                <button class="filter-btn" data-filter="olahraga tradisional">Olahraga Tradisional</button>
+                <button class="filter-btn" data-filter="hiburan">Hiburan</button>
+            </div>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+                Jelajahi warisan leluhur kita. Pilih permainan di bawah ini untuk melihat sejarah dan tata cara bermainnya.
+            </p>
+        </div>
+        <!-- ▲▲▲ AKHIR KARDUS PEMBUNGKUS ▲▲▲ -->
+
+        <div class="game-grid">
+            
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/kelereng/kelereng.png" alt="Kelereng">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Ketangkasan</span>
+                    <h3>Kelereng</h3>
+                    <p>Adu strategi sentil bola kaca.</p>
+                    <a href="kelereng.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/congklak/congklak.png" alt="Congklak">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Strategi</span>
+                    <h3>Congklak</h3>
+                    <p>Permainan strategi berhitung biji.</p>
+                    <a href="congklak.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                
+                <div class="card-img-holder">
+                    <img src="assets/egrang/egrang.jpg" alt="Egrang">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Keseimbangan</span>
+                    <h3>Egrang</h3>
+                    <p>Berjalan tinggi dengan bambu.</p>
+                    <a href="egrang.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/gobak-sodor/gobak-sodor.jpg" alt="Gobak Sodor">
+                <div class="card-content">
+                    <span class="tag">Kerjasama</span>
+                    <h3>Gobak Sodor</h3>
+                    <p>Permainan taktik hadang lawan.</p>
+                    <a href="gobak-sodor.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/petak-umpet/petak-umpet.jpg" alt="Petak Umpet">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Sosial</span>
+                    <h3>Petak Umpet</h3>
+                    <p>Mencari teman yang bersembunyi.</p>
+                    <a href="petak-umpet.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/gasing/gasing.jpg" alt="Gasing">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Ketangkasan</span>
+                    <h3>Gasing</h3>
+                    <p>Adu lama putaran gasing kayu.</p>
+                    <a href="gasing.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/permainan-ntb/peresean/peresean.jpg" alt="Peresean">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Bela Diri</span>
+                    <h3>Peresean</h3>
+                    <p>Adu ketangkasan petarung Sasak menggunakan tongkat rotan dan perisai.</p>
+                    <a href="peresean.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/permainan-ntb/belompongan/belompongan.jpg" alt="Belompongan">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Ketangkasan</span>
+                    <h3>Belompongan</h3>
+                    <p>Permainan regu memukul dan menangkap bola kasti dengan teknik khusus.</p>
+                    <a href="belompongan.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/permainan-ntb/panji/panji.jpg" alt="Panji">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Ketangkasan</span>
+                    <h3>Panji</h3>
+                    <p>Uji ketahanan fisik dan keberanian dengan saling menendang pantat.</p>
+                    <a href="panji.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/permainan-ntb/bale-balean/bale-balean.jpg" alt="Bale-balean">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Sosial</span>
+                    <h3>Bale-balean</h3>
+                    <p>Bermain peran meniru upacara adat perkawinan suku Sasak.</p>
+                    <a href="bale-balean.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/permainan-ntb/kideng/kideng.jpg" alt="Kideng">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Sosial</span>
+                    <h3>Kideng</h3>
+                    <p>Menebak nama teman yang ditangkap dengan mata tertutup.</p>
+                    <a href="kideng.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/permainan-ntb/begatrik/begatrik.jpg" alt="Begatrik">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Ketangkasan</span>
+                    <h3>Begatrik</h3>
+                    <p>Melempar batu ke sasaran sambil menggendong lawan di punggung.</p>
+                    <a href="begatrik.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/palentong/palentong.jpg" alt="Palentong">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Ketangkasan</span>
+                    <h3>Palentong</h3>
+                    <p>Adu ketepatan melempar sasaran kayu untuk mengumpulkan poin.</p>
+                    <a href="palentong.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/permainan-ntb/berau/berau.jpg" alt="Berau">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Kerjasama</span>
+                    <h3>Berau</h3>
+                    <p>Permainan kejar-kejaran beregu sambil menirukan suara merpati.</p>
+                    <a href="berau.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/lari-balok/lari-balok.webp" alt="Lari Balok">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Keseimbangan</span>
+                    <h3>Lari Balok</h3>
+                    <p>Adu cepat melangkah di atas balok kayu tanpa menyentuh tanah.</p>
+                    <a href="lari-balok.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/bakiak/bakiak.jpg" alt="Bakiak">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Kerjasama</span>
+                    <h3>Bakiak</h3>
+                    <p>Adu cepat dan kompak berjalan di atas papan kayu bersama tim.</p>
+                    <a href="bakiak.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/engklek/engklek.webp" alt="Engklek">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Keseimbangan</span>
+                    <h3>Engklek</h3>
+                    <p>Melompat dengan satu kaki di atas kotak-kotak untuk menguji keseimbangan.</p>
+                    <a href="engklek.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/lompat-tali/lompat-tali.jpg" alt="Lompat Tali">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Ketangkasan</span>
+                    <h3>Lompat Tali</h3>
+                    <p>Melompati tali dari karet gelang yang levelnya terus bertambah tinggi.</p>
+                    <a href="lompat-tali.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/bentengan/bentengan.jpg" alt="Bentengan">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Kerjasama</span>
+                    <h3>Bentengan</h3>
+                    <p>Permainan strategi beregu untuk merebut benteng dan menawan lawan.</p>
+                    <a href="bentengan.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/layang-layang/layang-layang.jpg" alt="Layang-layang">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Ketangkasan</span>
+                    <h3>Layang-layang</h3>
+                    <p>Adu ketangkasan memutus benang layangan lawan di udara.</p>
+                    <a href="layang-layang.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/tarik-tambang/tarik-tambang.jpg" alt="Tarik Tambang">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Olahraga Tradisional</span>
+                    <h3>Tarik Tambang</h3>
+                    <p>Adu kekuatan dan kekompakan beregu untuk menarik tali.</p>
+                    <a href="tarik-tambang.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/ular-naga/ular-naga.jpg" alt="Ular Naga Panjang">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Sosial</span>
+                    <h3>Ular Naga Panjang</h3>
+                    <p>Permainan kelompok yang diiringi dengan nyanyian ceria.</p>
+                    <a href="ular-naga.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+            <article class="game-card">
+                <div class="card-img-holder">
+                    <img src="assets/panjat-pinang/panjat-pinang.jpg" alt="Panjat Pinang">
+                </div>
+                <div class="card-content">
+                    <span class="tag">Hiburan</span>
+                    <h3>Panjat Pinang</h3>
+                    <p>Gotong royong memanjat tiang licin untuk meraih hadiah di puncak.</p>
+                    <a href="panjat-pinang.html" class="btn-read">Cara Bermain →</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>KPOTI Lombok Tengah</h3>
+                <p class="slogan">Merawat Tradisi, Merajut Persatuan.</p>
+                <p class="copyright">&copy; 2026 KPOTI Lombok Tengah. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <h4>Tautan Cepat</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="games.html">Daftar Permainan</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" class="back-to-top-btn" title="Kembali ke atas">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
